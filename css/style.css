@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Oswald", sans-serif;
+}
+
+/* logo */
+
+.site-logo{
+    max-width: 200px;
+}
+
+.btn-header{
+    background-color: #19B543 !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.text-green{
+    color: #19B543 !important;
+}
+
+.bg-green{
+    background-color: #19B543;
+}
+
+/* Custom styles for the carousel indicators */
+.carousel-indicators {
+    bottom: -40px !important;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    border: 1px solid gray !important;
+    background-color: transparent !important;
+    margin: 0 5px !important;
+    opacity: 1 !important;
+}
+.carousel-indicators .active {
+    background-color: #19B543 !important;
+    border-color: #19B543 !important;
+}
+
+/*  */
+
+.profile-img{
+    border-radius: 50%;
+    width: 90px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.profile-title{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+/* Custom styles for the progress bar */
+.progress {
+    border-radius: 0 !important;
+}
+.progress-bar {
+    border-radius: 0 !important;
+    background-color: #19B543;
+}
+
+.profile-price{
+    font-size: 1.75rem;
+    color: #19B543;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.profile-price-text{
+    color: #000;
+    font-size: 0.9rem;
+}
+
+.price-separator{
+    width: 1px;
+    height: 23px;
+    background: #000;
+    margin: 3px 1rem;
+}
+
+.btn-donation{
+    width: 100%;
+    background-color: #19B543 !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 0.5rem;
+}
+
+/* social-icons */
+
+.social-icons{
+    font-size: 1.5rem;
+}
+
+.social-icons a{
+    margin-right: 10px;
+}
+
+.text-facebook {
+    color: #3b5998;
+}
+.text-twitter {
+    color: #1DA1F2;
+}
+.text-instagram {
+    color: #C13584;
+}
+.text-messenger {
+    color: #0078FF;
+}
+
+/* tabs */
+
+.nav-tabs .nav-link, .nav-tabs{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.nav-tabs .nav-link{
+    color: gray;
+}
+
+.nav-tabs .nav-link.active{
+    color: black;
+}
+
+
+.tab-separator{
+    width: 1px;
+    height: 22px;
+    background: black;
+    margin: 10px 10px 0 10px;
+}
+
+.heading-green-line{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.heading-green-line::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    background-color: #19B543;
+    left: 0;
+    bottom: -5px;
+}
+
+/* donor box */
+
+.donor-box{
+    display: flex;
+    border: 1px solid #eee;
+    padding: 0.5rem;
+    gap: 10px;
+}
+
+.donor-box .donor-image i{
+    font-size: 35px;
+    color: #19B543;
+}
+
+.donor-box p{
+    font-size: 0.69rem;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.donor-box h5{
+    font-size: 1.15rem;
+}
+
+.donor-box h5 span{
+    /* font-size: 1rem; */
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+
+/* Footer styling */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #f8f9fa; */
+    /* border-top: 1px solid #e9ecef; */
+    font-size: 14px;
+}
+.footer a {
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+}
+.footer .social-icons a {
+    color: #19B543;
+    margin: 0 5px;
+}
+
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 992px) {
+    .social-icons{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .price-flex{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    ul.nav-tabs{
+        justify-content: space-between;
+    }
+
+    .tab-separator{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
