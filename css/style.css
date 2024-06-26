@@ -74,7 +74,7 @@ body{
 }
 
 .profile-price{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #19B543;
     font-weight: 700;
     line-height: 1;
@@ -82,7 +82,7 @@ body{
 
 .profile-price-text{
     color: #000;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .price-separator{
