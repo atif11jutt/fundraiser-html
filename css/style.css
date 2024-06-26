@@ -74,7 +74,7 @@ body{
 }
 
 .profile-price{
-    font-size: 1.75rem;
+    font-size: 1.6rem;
     color: #19B543;
     font-weight: 700;
     line-height: 1;
@@ -89,7 +89,7 @@ body{
     width: 1px;
     height: 23px;
     background: #000;
-    margin: 3px 1rem;
+    margin: 3px 1.5rem;
 }
 
 .btn-donation{
@@ -243,5 +243,30 @@ body{
     .tab-separator{
         margin-left: 0;
         margin-right: 0;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .navbar-toggler{
+        box-shadow: none !important;
+    }
+
+    ul.navbar-nav{
+        padding-top: 1rem;
+    }
+
+    .navbar-nav li{
+        text-align: end;
+    }
+}
+
+@media (max-width: 390px) {
+    ul.nav-tabs{
+        flex-direction: column;
+    }
+
+    .tab-separator{
+        display: none;
     }
 }
